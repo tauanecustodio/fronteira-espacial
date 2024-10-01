@@ -126,3 +126,19 @@ body {
 .main li {
     margin: 0.5rem 0;
 }
+
+/* ---------------------------- footer ---------------------------- */
+
+.footer {
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+.footer .paragraph {
+    color: var(--primary-color);
+}
+
+.footer a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
