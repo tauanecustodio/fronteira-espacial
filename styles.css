@@ -100,10 +100,10 @@ body {
 .nav-list ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
-.nav-list a {
+.link-item {
     font-size: 1.2rem;
     color: var(--primary-color)
 }
