@@ -1,0 +1,207 @@
+/* ---------------------------- reset ---------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* ---------------------------- geral ---------------------------- */
+
+:root {
+    --primary-color: #EAEAEA;
+    --secondary-color: #0B0D15; 
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* ---------------------------- components ---------------------------- */
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.logo a {
+    font-family: 'Bebas Neue';
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
+
+.title, .subtitle {
+    font-family: 'Bebas Neue';
+    letter-spacing: 1px;
+}
+
+.title {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin: 0 0 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin: 0 0 0.5rem;
+}
+
+.paragraph {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--secondary-color);
+    margin: 0.5rem 0;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+.button {
+    display: block;
+    background-color: var(--secondary-color);
+    font-family: 'Bebas Neue';
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    margin: 1rem 0 0;
+}
+
+.button:hover {
+    opacity: 0.9
+}
+
+/* ---------------------------- header ---------------------------- */
+
+.header {
+    background-color: var(--secondary-color);
+    font-family: 'Bebas Neue';
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.nav-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.link-item {
+    font-size: 1.2rem;
+    color: var(--primary-color)
+}
+
+/* ---------------------------- main ---------------------------- */
+
+.main .container > section {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.main .container > section > img {
+    max-width: 50%;
+    object-fit: contain;
+}
+
+.main li {
+    margin: 0.5rem 0;
+}
+
+.main .container .contact {
+    flex-direction: column;
+    gap: 0;
+}
+
+.contact .content {
+    display: flex;
+    gap: 2rem;
+}
+
+.contact li {
+    display: inline;
+    margin-right: 0.5rem;
+}
+
+.contact a {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form input {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.form button {
+    margin: 0;
+}
+
+.form input:focus {
+    border-color: var(--secondary-color);
+    outline-color: var(--secondary-color);
+}
+
+address {
+    font-size: 0.9rem;
+    font-style: italic;
+    cursor: pointer;
+}
+
+/* ---------------------------- footer ---------------------------- */
+
+.footer {
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+.footer .paragraph {
+    color: var(--primary-color);
+}
+
+.footer a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* ---------------------------- medias queries ---------------------------- */
+
+@media (max-width: 1000px) {
+    .main section, .contact .content {
+        flex-direction: column;
+    }
+    .main section:nth-of-type(3) {
+        flex-direction: column-reverse;
+    }
+    .main .container > section > img {
+        max-width: 100%;
+        object-fit: contain;
+    }
+}
