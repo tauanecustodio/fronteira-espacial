@@ -59,6 +59,7 @@ body {
 
 .paragraph {
     font-size: 1rem;
+    line-height: 1.5;
     color: var(--secondary-color);
     margin: 0.5rem 0;
 }
