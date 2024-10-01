@@ -17,8 +17,7 @@ li {
 
 :root {
     --primary-color: #EAEAEA;
-    --secondary-color: #6A5ACD;
-    --tertiary-color: #0B0D15; 
+    --secondary-color: #0B0D15; 
 }
 
 body {
@@ -41,12 +40,54 @@ body {
     letter-spacing: 1px;
 }
 
+.title, .subtitle {
+    font-family: 'Bebas Neue';
+    letter-spacing: 1px;
+}
+
+.title {
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+    margin: 0 0 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin: 0 0 0.5rem;
+}
+
+.paragraph {
+    font-size: 1rem;
+    color: var(--secondary-color);
+    margin: 0.5rem 0;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+.button {
+    display: block;
+    background-color: var(--secondary-color);
+    font-family: 'Bebas Neue';
+    color: var(--primary-color);
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    margin: 0.5rem 0;
+}
+
+.button:hover {
+    opacity: 0.9
+}
+
 /* ---------------------------- header ---------------------------- */
 
 .header {
-    background-color: var(--tertiary-color);
+    background-color: var(--secondary-color);
     font-family: 'Bebas Neue';
-    color: var(--primary-color);
 }
 
 .header .container {
@@ -65,4 +106,15 @@ body {
 .nav-list a {
     font-size: 1.2rem;
     color: var(--primary-color)
+}
+
+/* ---------------------------- main ---------------------------- */
+
+.main .container > section {
+    display: flex;
+    gap: 2rem;
+}
+
+.main .container > section > img {
+    max-width: 50%;
 }
