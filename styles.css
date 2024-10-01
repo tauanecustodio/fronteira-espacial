@@ -1,11 +1,68 @@
+/* ---------------------------- reset ---------------------------- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* ---------------------------- geral ---------------------------- */
+
 :root {
     --primary-color: #EAEAEA;
     --secondary-color: #6A5ACD;
     --tertiary-color: #0B0D15; 
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* ---------------------------- components ---------------------------- */
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.logo a {
+    font-family: 'Bebas Neue';
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
+
+/* ---------------------------- header ---------------------------- */
+
+.header {
+    background-color: var(--tertiary-color);
+    font-family: 'Bebas Neue';
+    color: var(--primary-color);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.nav-list a {
+    font-size: 1.2rem;
+    color: var(--primary-color)
 }
