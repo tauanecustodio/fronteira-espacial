@@ -46,7 +46,7 @@ body {
 }
 
 .title {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: var(--secondary-color);
     margin: 0 0 0.5rem;
 }
@@ -125,6 +125,54 @@ body {
 
 .main li {
     margin: 0.5rem 0;
+}
+
+.main .container .contact {
+    flex-direction: column;
+    gap: 0;
+}
+
+.contact .content {
+    display: flex;
+    gap: 2rem;
+}
+
+.contact li {
+    display: inline;
+    margin-right: 0.5rem;
+}
+
+.contact a {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+}
+
+.form {
+    min-width: 270px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form input {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.form button {
+    margin: 0;
+}
+
+.form input:focus {
+    border-color: var(--secondary-color);
+    outline-color: var(--secondary-color);
+}
+
+address {
+    font-style: italic;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 /* ---------------------------- footer ---------------------------- */
