@@ -18,10 +18,13 @@ li {
 :root {
     --primary-color: #EAEAEA;
     --secondary-color: #0B0D15; 
+    --background-gradient: linear-gradient(90deg, rgba(11,13,21,1) 0%, rgba(14,14,84,1) 35%, rgba(11,9,72,1) 56%, rgba(6,0,48,1) 100%);;
 }
 
 body {
     font-family: 'Montserrat', Arial, sans-serif;
+    background: linear-gradient(90deg, rgba(207,205,205,1) 0%, rgba(239,239,242,1) 56%, rgba(207,205,205,1) 100%);
+    background-attachment: fixed;
 }
 
 /* ---------------------------- components ---------------------------- */
@@ -70,9 +73,10 @@ body {
 
 .button {
     display: block;
-    background-color: var(--secondary-color);
+    background: var(--background-gradient);
     font-family: 'Bebas Neue';
     font-size: 1.1rem;
+    letter-spacing: 1px;
     color: var(--primary-color);
     text-align: center;
     padding: 1rem;
@@ -88,7 +92,7 @@ body {
 /* ---------------------------- header ---------------------------- */
 
 .header {
-    background-color: var(--secondary-color);
+    background: var(--background-gradient);
     font-family: 'Bebas Neue';
 }
 
@@ -109,6 +113,10 @@ body {
 .link-item {
     font-size: 1.2rem;
     color: var(--primary-color)
+}
+
+.nav-list ul li:hover {
+    scale: 1.1;
 }
 
 /* ---------------------------- main ---------------------------- */
@@ -158,6 +166,8 @@ body {
 .form input {
     padding: 0.5rem;
     font-size: 0.9rem;
+    background: transparent;
+    border-color: var(--secondary-color);
 }
 
 .form button {
@@ -178,7 +188,7 @@ address {
 /* ---------------------------- footer ---------------------------- */
 
 .footer {
-    background-color: var(--secondary-color);
+    background: var(--background-gradient);
     text-align: center;
 }
 
